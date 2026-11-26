@@ -29,7 +29,7 @@ La aplicación se desarrollará como una experiencia mobile-first, con soporte c
 
 El frontend no debe conectarse directamente a la base de datos ni recibir credenciales de Neon. Las consultas se realizarán desde endpoints del servidor/API. La cadena `DATABASE_URL` será una variable de entorno exclusivamente del servidor.
 
-Recomendación de arquitectura pendiente de confirmación: crear un proyecto/base de datos de Neon independiente para Club Social, separado de Spearhead Companion. Así se mantienen aislados los datos, permisos y ciclos de vida de ambos productos, aunque ambos proyectos utilicen la misma cuenta de Neon.
+Decisión confirmada: Club Social tendrá un proyecto de Neon independiente y un proyecto de Vercel independiente de Spearhead Companion. Ambos productos pueden utilizar las mismas cuentas de proveedor, pero conservarán proyectos, configuración, despliegues, credenciales y datos separados.
 
 ## Estado
 
